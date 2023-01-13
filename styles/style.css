@@ -137,3 +137,48 @@ hr {
     opacity: 0.25;
 
 }
+
+/*==============
+ media queries
+ =============== */
+/* mobile device */
+
+
+@media screen and (max-width:668px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+
+}
+
+/* tablet devices */
+@media only screen and (max-width: 992px) and (min-width:689px) {
+    .container {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-right: 0;
+
+    }
+
+    .blog-info {
+        width: 100%;
+    }
+}
